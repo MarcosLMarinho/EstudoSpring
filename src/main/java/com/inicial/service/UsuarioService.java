@@ -28,5 +28,4 @@ public class UsuarioService {
     public Optional<Usuario> findByUsername(String username) {
         return usuarioRepository.findByUsername(username);
     }
-
 }
