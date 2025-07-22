@@ -25,7 +25,7 @@ public class JwtUtil {
                 .getSubject();
     }
 
-    public static boolean validateToken(String token, String username) {
+    public static boolean validateToken(String token) {
         try {
             io.jsonwebtoken.Jwts.parserBuilder()
                     .setSigningKey(SECRET_KEY)
